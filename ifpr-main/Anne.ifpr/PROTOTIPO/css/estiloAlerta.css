@@ -1,0 +1,14 @@
+.alerta{
+    padding: 15px;
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex-basis: 100%; /*Faz o alerta ocupar toda a largura do flex container*/
+    border-radius: 5px;
+}
+
+.info{
+    background-color: #d1ecf1;
+    color: #0f8739;
+    border: 1px solid #88ae1e;
+}
