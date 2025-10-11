@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Compras</title>
+    <link href="css/estiloNavBar.css" rel="stylesheet">
+    <link href="css/estiloAlerta.css" rel="stylesheet">
+    <link href="css/Ta.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--Cabeçalho | logotipo e slogan do protótipo-->
+    <div class="divHeader">
+        <a href="index.html" title="Clique na logo para retornar à Página Inicial">
+            <img src="img/generico_logo.png" style="width: 150px;">
+        </a>
+        <h2>Protótipo | Sistema de Vendas</h2>
+    </div>
+
+   <!--Barra de Navegação do Protótipo (NavBar)-->
+   <ul>
+        <li><a href="index.html" title="Retornar à Página inicial">Página Inicial</a></li>
+        <li><a href="formProduto.html" title="Cadastrar Produto">Cadastrar Produto</a></li>
+        <li><a href="visualizarCompras.html" title="Visualizar compras" class="active">Visualizar compras</a></li>
+        <li style="float: right; border-left: 1px solid white;"><a href="formLogin.html" title="Acessar sistema">Login</a></li>
+   </ul>
+
+    <!--Conteúdo | abrigará os elementos da página-->
+    <div class="divConteudo">
+
+        <!--Alerta de informação da quantidade de Produtos Cadastrados-->
+        <div class="alerta info">
+            Você efetuou a compra de 7 produtos!
+        </div>
+
+        <!--Tabela para exibir produtos-->
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Foto</th>
+                <th>Nome</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th></th>
+            </tr>
+            <tr> 
+                <td>001</td>
+                <td><img src="img/produtos/NS2.webp" style="width: 100px"></td>
+                <td>Nintendo Switch 2</td>
+                <td>R$ 3.999,00</td>
+                <td>10/10/2025</td>
+                <td>19:40</td>
+            </tr>
+
+            <tr> 
+                <td>002</td>
+                <td><img src="img/produtos/PS5.webp" style="width: 100px"></td>
+                <td>Sony PlayStation 5</td>
+                <td>R$ 3.899,00</td>
+                <td>10/10/2025</td>
+                <td>19:45</td>
+            </tr>
+        </table>
+
+    </div> 
+
+    <!--Rodapé-->
+    <div class="divFooter">
+        <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do curso de TADS do Instituto Federal do Paraná | Campus Telêmaco Borba</p>
+    </div>
+</body>
+</html>

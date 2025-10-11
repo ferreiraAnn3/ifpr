@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de Usuário</title>
+    <link href="css/estiloNavBar.css" rel="stylesheet">
+    <link href="css/estiloForm.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--Cabeçalho | logotipo e slogan do protótipo-->
+    <div class="divHeader">
+        <a href="index.html" title="Clique na logo para retornar à Página Inicial">
+            <img src="img/generico_logo.png" style= "width: 150px;">
+        </a>
+        <h2>Protótipo | Sistema de Vendas</h2>
+    </div>
+
+   <!--Barra de Navegação do Protótipo (NavBar)-->
+   <ul>
+    <li><a href="index.html" title="Retornar à Página inicial" >Página Inicial</a></li>
+    <li> <a href="formProduto.html" title="Cadastrar Produto" >Cadastrar Produto</a></li>
+    <li> <a href="visualizarCompras.html" title="Visualizar compras">Visualizar compras</a></li>
+    <li style="float: right; border-left: 1px solid white;"><a class="active" href="formLogin.html" title="Acessar sistema">Login</a></li>
+   </ul>
+
+    <!--Conteúdo | abrigará os elementos da página-->
+    <div class="divConteudo">
+
+            <h2 style="text-align:center">Cadastro de Usuário</h2>
+
+       <form action="#" method="POST" enctype="multipart/form-data">
+
+            <label for="fotoUsuario">Foto</label>
+            <input type="file" id="fotoUsuario" name="nomeUsuario" accept="image/*">
+
+            <label for="nomeUsuario">Nome</label>
+            <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite o nome comoleto: " required>
+
+            <label for="dataNascimentousuario">Data de Nascimento</label>
+            <input type="date" id="dataNascimentousuario" name="dataNascimentousuario" required>
+
+            <label for="cidadeusuario">Cidade</label>
+            <select id="cidadeUsuario" itemid="cidadeUsuario" required>
+                <option value="">Selecione...</option>
+                <option value="telemaco">Telêmaco Borba</option>
+                <option value="imbau">Imbaú</option>
+                <option value="tibagi">Tibagi</option>
+                <option value="curiuva">Curiúva</option>
+                <option value="ortigueira">Ortigueira</option>
+            </select>
+
+            <label for="telefoneUsuario">Telefone</label>
+            <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="(00) 0 0000-0000" required>
+
+            <label for="emailUsuario">Email</label>
+            <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Ex. usuario@email.com">
+
+            <label for="senhaUsuario">Senha</label>
+            <input type="password" id="senhaUsuario" name="senhaUsuario" minlength="6" maxlength="10" required>
+            
+            <label for="confirmarsenhaUsuario">Senha</label>
+            <input type="password" id="confirmarsenhaUsuario" name="confirmarsenhaUsuario" minlength="6" maxlength="10" required>
+          
+            
+            <input type="submit" value="Cadastrar Produto">
+
+       </form>
+
+
+    </div> 
+
+    <!--Rodapé-->
+    <div class="divFooter">
+        <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do curso de TADS do Instituto Federal do Paraná | Campus Telêmaco Borba</p>
+    </div>
+</body>
+</html>

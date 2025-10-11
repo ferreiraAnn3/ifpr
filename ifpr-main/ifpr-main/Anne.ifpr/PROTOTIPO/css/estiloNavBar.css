@@ -1,0 +1,81 @@
+
+/* Seletor Universal * (Aplica em toda a página)*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divHeader{
+    text-align: center; /*Define o alinhamento como centralizado*/
+    padding-top: 10px; /*Define o espaçamento superior*/
+    padding-bottom: 10px; /*Define o espaçamento inferior*/
+    margin-bottom: 20px; /*Define margem inferior*/
+}
+
+.divConteudo{
+    margin: 50px; 
+    display: flex; /*Ativa o FlexBox*/
+    flex-wrap: wrap; /*Permite a quebra de linhas, caso falte espaço*/
+    justify-content: center; /*Centraliza os elementos da div*/
+    gap: 20px; /*Espaçamento entre os produtos*/
+    padding: 20px; /*Espaçamento interno*/
+    flex: 1; 
+}
+
+.divFooter{
+    text-align: center;
+    background-color: #333;
+    color: rgb(190, 221, 187);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed; /*Fixa o elemento na tela*/
+    bottom: 0; /*Gruda no fundo da janela*/
+    left: 0; /*Alinha à esquerda*/
+    width: 100%; /*Ocupa toda a largura da página*/
+}
+
+h2, p{
+    margin: 10px;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    padding-bottom: 50px;
+    background: linear-gradient(135deg, #a2f0ad, #ffffff);
+    
+}
+
+ul{
+    list-style-type: none; /*remove os marcadores padrões (bolinhas)*/
+    margin: 0; /*remove a margem padão da lista*/
+    padding: 0; /*Remove o espaçamento padrão da lista*/
+    background-color: #333; /*Define a cor da NavBar*/
+    overflow: hidden; /*Garante que o fundo da NavBar contenha os elementos flutuantes*/
+    position: sticky; /*Gruda a barra no topo ao rolar a barra*/
+    top: 0; /*Define a posição fixa no topo da janela*/
+}
+
+ul li{
+    float: left; /*Flutua os itens à esquerda, alinhando-os horizontalmente*/
+    
+}
+
+ul li a{
+    display: block; /*Faz com que o link ocupe toda a área do item da lista (bloco)*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /*Cria espaçamento externo (vertical e horizontal)*/
+    text-decoration: none; /*Remove o subrinhado*/
+}
+
+ul li a:hover{
+    background-color: #22c22d; /*Muda a cor de fundo ao passar o mouse*/ 
+}
+
+ul li a.active{
+    background-color: #107114;
+}
+

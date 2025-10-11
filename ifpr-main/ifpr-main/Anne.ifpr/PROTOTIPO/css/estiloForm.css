@@ -1,0 +1,86 @@
+/*Estilos para os formulários do Protótipo*/
+
+form {
+    border-radius: 12px; /*Arredonda as bordas*/ 
+    background-color: rgba(255, 255, 255, 0.25);/*branco translucido*/
+    padding: 20px;/*espaçamento*/ 
+    max-width: 500px;/*Arredonda as bordas*/ 
+    margin: 20px auto;
+    box-shadow: 0 8px 24px rgba(112, 105, 105, 0.098); /*Efeito de sombra*/ 
+    border: 1px solid rgba(255, 255, 255, 0.3); /*Borda sutil e translucida*/
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+label {
+    display: block; /*Faz o label se comportar como bloco*/
+    margin-top: 10px; /*Espaçamento sobre o label*/
+    font-weight: 600; /*Deixa o texto "seminegrito"*/
+}
+
+.divConteudo {
+    display: block;
+}
+
+input[type=file], 
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+select
+textarea{
+    width: 100%; /* Define a largura 100%*/
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block; /*Mantém o comportamento em linha*/
+    border: 1px solid rgb(5, 77, 28);
+    border-radius: 4px ;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: white;
+}
+
+textarea{
+    min-height: 100px; /*Define a altura minima de um elemento*/
+    resize: vertical;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #1e5e29;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; /*Altera o cursor para 'pointer'*/
+    font-weight: bold;
+    transition: background .2s, transform .05s;
+}
+
+input[type=submit]:hover{
+    background-color: #48a058;
+
+}
+
+/*efeito quando o botão for clicado*/
+input[type=submit]:active{
+    transform: scale(1.1) ;
+}
+
+/*Efeito de destaque no foco (acessibilidade)*/
+input[type=file]:focus,
+input[type=text]:focus,
+textarea:focus{
+    outline: 2px solid rgb(6, 217, 34); /*Define a borda colorida ao clicar*/
+    border-color: rgb(6, 217, 34); /*Define a cor da borda ao focar*/
+}
+
+/*Responsividade*/
+@media (max-width: 420px) {
+    form{
+        padding: 16px;
+    }
+}
+
+
+

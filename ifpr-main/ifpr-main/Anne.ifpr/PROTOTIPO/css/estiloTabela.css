@@ -1,0 +1,22 @@
+/*estilo da tabela modelo w3school*/
+
+table{
+    border-collapse: collpase; /*remove espaçamento enttre as bordas*/
+    width: 100%;  /*ocupa todo o lugar da div*/
+    font-size: 1rem;
+}
+
+/*estilizar as células da tabela*/
+th, td{
+    text-align: left; /*texto alinhado à esquerda*/
+    padding: 12px; /*espaçamento interno*/
+    border-bottom: 1px solid #88c88a;
+}
+
+th{
+    background-color: #afd5b0;
+}
+
+tr:hover{
+    background-color: #d6ffd7;
+}

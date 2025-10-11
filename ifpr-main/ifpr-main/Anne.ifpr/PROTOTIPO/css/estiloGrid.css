@@ -1,0 +1,21 @@
+.grid {
+    display: grid; /* Ativa o Grid Layout */
+    grid-template-columns: repeat(4, auto); /* Cria 4 colunas com tamanho automático */
+    gap: 40px; /* Aumenta o espaçamento entre os cards */
+    width: 100%; /* Ocupa toda a largura disponível */
+    justify-items: start; /* Alinha os itens à esquerda */
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #d6ffd7;
+    border-radius: 10px;
+    box-shadow:2px 2px 6px #5ba95e;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.05); /*aumenta levemente o card ao cursos posicionar sobre ele*/
+}
