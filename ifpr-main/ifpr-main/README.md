@@ -1,2 +1,0 @@
-# IFPR
-Tecnologias Web | Paulinho
