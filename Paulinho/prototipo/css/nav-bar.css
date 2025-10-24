@@ -1,0 +1,81 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding-top: 10px; /*espaçameto interno do topo do cabeçalho*/
+    padding-bottom: 10px;/*espaçameto interno da parte de baixo do cabeçalho*/
+    margin-bottom: 20px; 
+    background-color: #B6A2D4; 
+}
+
+
+main{
+    margin: 50px; /*espaçamento externo em todos os quatro lados da área principal.*/
+    display: flex; /*Transforma o <main> em um container flexbox. Isso permite alinhar e distribuir facilmente os elementos filhos*/
+    flex-wrap: wrap;/*quebra a linha se o elemento não couber na página*/
+    justify-content: center; /*centraliza os cards na horizontal dentro do container main*/
+    gap: 20px;/*Espaçamento entre os elementos*/
+    padding: 20px;
+    flex: 1;
+}
+
+footer{
+    text-align: center;
+    background-color: #B6A2D4; 
+    color: (#6c0d3c);
+    padding: 15px; 
+    position: fixed; /*fixa o rodapé*/
+    bottom: 0;/*Grudar o elemento no fim da página*/
+    left: 0;
+    width: 100%;/*faz o rodapé ocupar toda a largura da página*/
+}
+
+h2, p{
+    margin: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    padding-bottom: 60px; 
+    background-color: #ffd7f3d7;
+    color: #6c0d3c;
+    background-attachment: fixed;
+}
+
+/*estiliza a lista não ordenada*/
+ul{
+    list-style-type: none;/*remove os marcadores(bolinhas)*/
+    margin: 0;
+    padding: 0;
+    background-color: #B6A2D4; 
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    display: block;
+    color: #6c0d3c; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+ul li a:hover{
+    background-color: #A6E1D3;
+}
+
+ul li a.active{
+    background-color: #A6E1D3;
+    color:#98046cd7;
+    font-weight: bold;
+}

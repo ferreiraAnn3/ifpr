@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/estiloForm.css">
+    
+</head>
+<body>
+    <!--Cabeçalho - Navergação
+    #Logotipo + Slogan do Projeto -->
+    <header>
+        <a href="inicio.html" title="Home"><img src="img/generico_logo.png" alt="" width="150px" height="150px"></a>
+        <h2>Protótipo do Sistema</h2>
+        
+    </header>
+              <ul>
+                <li><a href="inicio.html">Home</a></li>
+                <li><a href="formproduto.html" class="active">Cadastrar Produtos</a></li>
+                <li><a href="visualizarCompras.html">Visualizar Compras</a></li>
+                <li style="float: right; border-left: 1px solid #ffd7f3d7;"><a href="formLogin.html">Login</a></li>
+            </ul>
+     <h2 style="text-align: center; padding-top:20px;">Cadastrar Produto:</h2>
+
+        <div class="divConteudo">
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="formProduto">Foto</label>
+                <input type="file" id="formProduto" required>
+
+                <label for="nomeProduto">Nome</label>
+                <input type="text" id="nomeProduto" placeholder="Digite o nome do produto" required>
+
+                <label for="descricaoProduto">Descrição do Produto</label>
+                <textarea name="descricaoProduto" id="descricaoProduto" placeholder="Digite uma breve descrição" required></textarea>
+
+                <label for="valorProduto">Valor do Produto (R$)</label>
+                <input type="text" id="valorProduto" name="valorProduto" placeholder="Ex.: 199,90" required>
+
+                <input type="submit" value="Cadastrar Produto">
+            </form>
+        </div>
+
+       <!--Rodapé-->
+    <footer>
+        <p>Interface desenvolvida para as aulas de Tecnologias Web do curso de TADS | Instituto Federal do Paraná</p>
+    </footer>
+</body>
+</html>
