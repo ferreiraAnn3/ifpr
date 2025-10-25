@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/estiloForm.css">
+    
+</head>
+<body>
+    <!--Cabeçalho - Navergação
+    #Logotipo + Slogan do Projeto -->
+    <header>
+        <a href="inicio.html" title="Home"><img src="img/generico_logo.png" alt="" width="150px" height="150px"></a>
+        <h2>Protótipo do Sistema</h2>
+        
+    </header>
+              <ul>
+                <li><a href="inicio.html">Home</a></li>
+                <li><a href="formproduto.html" >Cadastrar Produtos</a></li>
+                <li><a href="visualizarCompras.html">Visualizar Compras</a></li>
+                <li style="float: right; border-left: 1px solid #ffd7f3d7;"><a href="formLogin.html" class="active">Login</a></li>
+            </ul>
+     <h2 style="text-align: center; padding-top:20px;">Cadastrar-se</h2>
+        <div class="divConteudo">
+        
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="fotoUsuario">Foto</label>
+                <input type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*">
+
+                <label for="nomeUsuario">Nome</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite o nome completo" required>
+
+                <label for="dataNascimentoUsuario">Data de Nascimento</label>
+                <input type="date" id="dataNascimentoUsuario" name="dataNascimentoUsuario" required>
+
+                <label for="cidadeUsuario">Cidade</label>
+                <select name="cidadeUsuario" id="cidadeUsuario" required>
+                    <option value="">Selecione..</option>
+                    <option value="telemaco">Telemâco Borba</option>
+                    <option value="imbau">Imbaú</option>
+                    <option value="tibagi">Tibagi</option>
+                    <option value="curiuva">Curiúva</option>
+                    <option value="ortigueira">Ortigueira</option>
+                </select>
+
+                <label for="telefoneUsuario">Telefone</label>
+                <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="(99) 99999-9999" required>
+
+                <label for="emailUsuarios">Email</label>
+                <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Ex. usuario@gmail.com" required>
+
+                <label for="senhaUsuario">Senha</label>
+                <input type="password" id="senhaUsuario" name="senhaUsuario" minlength="6" maxlength="10" required>
+
+                <label for="confirmarSenhaUsuario">Confirmar Senha</label>
+                <input type="password" id="confirmarSenhaUsuario" name="confirmarSenhaUsuario" minlength="6" maxlength="10" required>
+
+                <input type="submit" value="Entrar">
+            </form>
+
+        </div>
+
+   <!--Rodapé-->
+    <footer>
+        <p>Interface desenvolvida para as aulas de Tecnologias Web do curso de TADS | Instituto Federal do Paraná</p>
+    </footer>
+</body>
+</html>

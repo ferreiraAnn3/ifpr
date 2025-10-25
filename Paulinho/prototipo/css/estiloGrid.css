@@ -1,0 +1,48 @@
+/* --- Estilos para a Grade de Produtos --- */
+
+/* O container que segura todos os cards */
+.grid {
+    display: grid; /* Ativa o layout de grade */
+    
+    /* Cria 4 colunas de tamanho igual e flexível (1fr = 1 fração do espaço) */
+    grid-template-columns: repeat(4, 1fr); 
+    
+    gap: 20px; /* Espaçamento de 20px entre cada card */
+    width: 100%;
+}
+
+/* O estilo para cada card individual */
+.card {
+    background-color: #FFFFFF; /* Fundo branco para contrastar com o creme */
+    border: 1px solid #e9e3f1; /* Borda lavanda bem clarinha */
+    /* Mantenha o seu box-shadow, mas talvez um pouco mais suave */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center;
+    padding: 15px;
+    
+    /* Transição suave para os efeitos de hover */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse por cima do card */
+.card:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do card */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6); /* Aumenta a sombra para dar efeito de elevação */
+    border-color: #A6E1D3;
+}
+
+/* Estilo para o título do produto dentro do card */
+.card h3 {
+    color: #4d053c;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Estilo para o preço do produto dentro do card */
+.card p {
+    color: #762f65;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+}

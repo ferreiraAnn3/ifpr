@@ -1,0 +1,31 @@
+
+table {
+    border-collapse: collapse; /* Remove os espaçamento entre as bordas */
+    width: 90%; /* Ajustado para 90% para não colar nas bordas do <main> */
+    margin: 0 auto; /* Centraliza a tabela na área do <main> */
+    font-size: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar a tabela */
+}
+
+/* Estilizar as células da tabela */
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #A9B2BC; 
+}
+
+/* Estilo do Cabeçalho da Tabela */
+th {
+    background-color: #B6A2D4;
+    color: #edbce4; 
+}
+
+/* Efeito ao passar o mouse sobre as linhas de dados */
+tr:hover {
+    background-color: #d0f9ef; 
+}
+
+/* Remove o efeito hover do cabeçalho da tabela para não mudar de cor */
+thead tr:hover {
+    background-color: transparent;
+}
